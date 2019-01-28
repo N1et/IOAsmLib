@@ -17,7 +17,7 @@ Para o estudo do livro Low-Level Programming, eu precisei fazer uma lib para fac
 
 ## Examples
 
-### print_number
+### print_number.asm
 ```asm
 %include "lib.inc"
 
