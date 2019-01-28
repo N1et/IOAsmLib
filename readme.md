@@ -15,3 +15,22 @@ Para o estudo do livro Low-Level Programming, eu precisei fazer uma lib para fac
 - string equals
 - string copy
 
+## Examples
+
+### print_number
+```asm
+%include "lib.inc"
+
+section .text
+
+global _start
+
+_start:
+	mov rdi, 12345
+	call print_uint ; int unsigned
+	call print_newline
+	mov rdi, -12345
+	call print_int ; int signed
+	call print_newline 
+	call exit
+ ```
