@@ -1,5 +1,5 @@
 # I/O Assembly lib 
-Como estudo do livro Low-Level Programming, eu precisei fazer uma lib para facilitar a manipulação de entrada/saida. A lib no geral é bem simples, porém é bastante útil. Abaixo as funções que a lib oferece.
+Para o estudo do livro Low-Level Programming, eu precisei fazer uma lib para facilitar a manipulação de entrada/saida. A lib no geral é bem simples, porém é bastante útil. Abaixo as funções que a lib oferece.
 
 ## calls
 - exit
