@@ -198,7 +198,7 @@ read_word:
 ; parse_uint
 ; rdi - str pointer
 parse_uint:
-	push rcx
+   push rcx
    xor rcx, rcx ; counter
    xor rbx, rbx ;
    mov rax, 10
@@ -221,7 +221,7 @@ parse_uint:
 .end:
    mov rax, rbx
    mov rdx, rcx
-	pop rcx
+   pop rcx
    ret
 ; parse_int
 ; rdi - str pointer
@@ -245,10 +245,10 @@ parse_int:
 ; return rax
 
 string_equals:
-	push rdx
-	push rbx
-	push rcx
-	xor rdx, rdx
+   push rdx
+   push rbx
+   push rcx
+   xor rdx, rdx
    mov rax, rdi
    call .sum
    mov rbx, rdx
@@ -259,9 +259,9 @@ string_equals:
    mov rcx, rdx
 
    cmp rbx, rcx
-	pop rcx
-	pop rbx
-	pop rdx
+   pop rcx
+   pop rbx
+   pop rdx
    je .r1
    mov rax, 0
    ret
@@ -285,25 +285,25 @@ string_equals:
 ; rsi - buffer src
 ; rdx - size buffer src
 string_copy:
-	push rcx
-	call string_length
-	cmp rax, rdx
-	xor rax, rax
-	ja .end
-	mov rax, rsi 
-	xor rcx, rcx ; counter
+   push rcx
+   call string_length
+   cmp rax, rdx
+   xor rax, rax
+   ja .end
+   mov rax, rsi 
+   xor rcx, rcx ; counter
 	
 .loop:
-	mov bl, [rdi+rcx]
-	cmp bl, 0 
-	je .end
-	mov BYTE [rsi+rcx], bl
-	inc rcx
-	jmp .loop
+   mov bl, [rdi+rcx]
+   cmp bl, 0 
+   je .end
+   mov BYTE [rsi+rcx], bl
+   inc rcx
+   jmp .loop
 
 .end:
-	pop rcx
-	ret
+   pop rcx
+   ret
 
 
 
