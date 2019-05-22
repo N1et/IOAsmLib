@@ -6,7 +6,7 @@ Os argumentos das funções seguem o mesmo padrão das syscalls x86-64.
 
 | call          | rdi                   | rsi            | rdx            | rax                                         |
 |---------------|-----------------------|----------------|----------------|---------------------------------------------|
-| exit          | signed int error_code |                |                |                                             |
+| exit          | signed int code |                |                |                                             |
 | string_length | char \*string          |                |                | int sizeofstring                            |
 | print_string  | char \*string          |                |                |                                             |
 | print_char    | char ch               |                |                |                                             |
