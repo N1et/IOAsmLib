@@ -2,9 +2,9 @@
 Para o estudo do livro Low-Level Programming, eu precisei fazer uma lib para facilitar a manipulação de entrada/saida. A lib no geral é bem simples, porém é bastante útil. Abaixo as funções que a lib oferece.
 
 ## calls
-Os argumentos das funções seguem o mesmo padrão das syscalls x86-64.
+Os argumentos das funções seguem o mesmo padrão das syscalls x86-64. RAX é o registrador de retorno.
 
-| call          | rdi                   | rsi            | rdx            | rax                                         |
+| call          | rdi                   | rsi            | rdx            | rax(return)                                   |
 |---------------|-----------------------|----------------|----------------|---------------------------------------------|
 | exit          | signed int code |                |                |                                             |
 | string_length | char \*string          |                |                | int sizeofstring                            |
